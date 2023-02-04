@@ -30,3 +30,4 @@ emacs-lisp-mode
         "(advice-add #'" (p "fun") " " (p ":around") " #'" (s name) ")")
 (provide "(provide '" (file-name-base (or (buffer-file-name) (buffer-name))) ")" n
          ";;; " (file-name-nondirectory (or (buffer-file-name) (buffer-name))) " ends here" n)
+(header ";;; "(file-name-base (or (buffer-file-name) (buffer-name))) " --- " (p "Summary") " -*- lexical-binding: t -*-" n ";;; Commentary:" n ";;; Code:" n)
