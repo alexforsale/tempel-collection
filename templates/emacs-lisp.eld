@@ -29,4 +29,6 @@ emacs-lisp-mode
         "(advice-add #'" (p "fun") " " (p ":around") " #'" (s name) ")")
 (prvide "(provide '" (file-name-base (or (buffer-file-name) (buffer-name))) ")" n
          ";;; " (file-name-nondirectory (or (buffer-file-name) (buffer-name))) " ends here" n)
+(log "(message \"LOG %s " (s sexp) ": %S"
+     "\" (format-time-string \"%X\") " sexp ")")
 (header ";;; "(file-name-base (or (buffer-file-name) (buffer-name))) " --- " (p "Summary") " -*- lexical-binding: t -*-" n ";;; Commentary:" n ";;; Code:" n)
