@@ -2,7 +2,6 @@ emacs-lisp-mode
 
 (autoload ";;;###autoload")
 (pt "(point)")
-(lambda "(lambda (" p ")" n> r> ")")
 (var "(defvar " p "\n  \"" p "\")")
 (local "(defvar-local " p "\n  \"" p "\")")
 (const "(defconst " p "\n  \"" p "\")")
@@ -30,4 +29,6 @@ emacs-lisp-mode
         "(advice-add #'" (p "fun") " " (p ":around") " #'" (s name) ")")
 (provide "(provide '" (file-name-base (or (buffer-file-name) (buffer-name))) ")" n
          ";;; " (file-name-nondirectory (or (buffer-file-name) (buffer-name))) " ends here" n)
+(log "(message \"LOG %s " (s sexp) ": %S"
+     "\" (format-time-string \"%X\") " sexp ")")
 (header ";;; "(file-name-base (or (buffer-file-name) (buffer-name))) " --- " (p "Summary") " -*- lexical-binding: t -*-" n ";;; Commentary:" n ";;; Code:" n)

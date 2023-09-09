@@ -1,4 +1,4 @@
-rust-mode
+rust-mode rust-ts-mode
 
 (if "if " p " {" n> q n> "}" q)
 
@@ -11,3 +11,9 @@ rust-mode
 (fnr "fn " p "(" p ") -> " p " {" n> p n "}" q)
 
 (crt "extern crate " q ";")
+
+(drv "#[derive(" p ")]" q)
+
+(d "dbg!(" p ")" q)
+
+(lp "loop {" n> q n> "}" q)
